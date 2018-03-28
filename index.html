@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark">
+                <h1 class="display-3 text-center">New York Times Search</h1>
+            </div>
+
+            <div class="card" id="search-parameters">
+                <h5 class="card-header">Search Parameters</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="search-term">Search Term:</label>
+                            <input type="text" class="form-control" id="search-term">
+                        </div>
+                        <div class="form-group">
+                            <label for="records">Number of Records to Retrieve:</label>
+                            <select class="form-control" id="records">
+                            <option>1</option>
+                            <option>5</option>
+                            <option>10</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="start-year">Start Year (Optional):</label>
+                            <input type="text" class="form-control" id="start-year">
+                        </div>
+                        <div class="form-group">
+                            <label for="end-year">End Year (Optional):</label>
+                            <input type="text" class="form-control" id="end-year">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="search-button">Search</button>
+                        <button type="submit" class="btn btn-primary" id="clear-button">Clear Results</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card">
+                <h5 class="card-header">Top Articles</h5>
+                <div class="card-body" id="top-articles">
+
+                </div>
+            </div>
+        </div>
+
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
